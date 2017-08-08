@@ -1,0 +1,100 @@
+.topic-item
+  padding: 0 32px;
+  background: #FFFFFF;
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.03);
+  .header
+    padding-top: 40px
+    display: flex
+    img.avatar
+      width: 72px !important
+      height: 72px !important
+      border-radius: 50%
+    .header-right
+      margin-left: 16px
+      .header-right-first-fl
+        display: flex
+        align-items: center
+        .nickname
+          font-family: PingFangSC-Regular
+          font-size: 28px
+          color: #222222
+          letter-spacing: -0.18px
+          line-height: 36px
+      .header-right-second-fl
+        margin-top: 8px;
+        font-family: PingFangSC-Regular;
+        font-size: 20px;
+        color: #999999;
+        letter-spacing: -0.12px;
+        line-height: 24px;
+        .separated
+          padding: 0 8px
+  .content
+    margin-top: 24px
+    .no-read
+      font-family: PingFangSC-Regular
+      font-size: 32px
+      color: #222222
+      letter-spacing: -0.2px
+      line-height: 48px
+      user-select: initial
+    .read
+      font-family: PingFangSC-Regular
+      font-size: 32px
+      color: #999
+      letter-spacing: -0.2px
+      line-height: 48px
+      user-select: initial
+      -webkit-line-clamp: 2
+      word-break: break-word
+      text-overflow: ellipsis
+    .video
+      display: inline-block
+      width: 36px
+      height: 28px
+      background: url('@/imgs/ic_sq_movie@2x.png') center / 36px 28px no-repeat
+      margin-left: 16px
+    .images
+      display: inline-block
+      width: 36px
+      height: 28px
+      background: url('@/imgs/ic_sq_pic@2x.png') center / 36px 28px no-repeat
+      margin-left: 16px
+  .footer
+    margin-top: 32px
+    border-top: 2px solid rgba(0, 0, 0, .1)
+    display: flex
+    div
+      flex: 1
+      height: 40px
+      margin: 24px 0px
+      display: flex
+      align-items: center
+      border-right: 2px solid rgba(0, 0, 0, .1)
+      justify-content: center
+      &:last-child
+        border: none
+      span
+        display: inline-block
+        padding-left: 44px;
+        height: 40px
+        font-family: PingFangSC-Regular;
+        font-size: 24px;
+        color: #999999;
+        letter-spacing: -0.15px;
+        line-height: 40px;
+    .start
+      span
+        background: url('@/imgs/ic_sq_collect_n@2x.png') center left / 36px 36px no-repeat
+    .started
+      span
+        background: url('@/imgs/ic_sq_collect_h@2x.png') center left / 36px 36px no-repeat
+    .comment
+      span
+        background: url('@/imgs/ic_sq_discuss@2x.png') center left / 36px 36px no-repeat
+    .love
+      span
+        background: url('@/imgs/ic_sq_like_n@2x.png') center left / 36px 36px no-repeat
+    .loved
+      span
+        background: url('@/imgs/ic_sq_like_h@2x.png') center left / 36px 36px no-repeat

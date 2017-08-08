@@ -1,0 +1,124 @@
+.comment-area
+  .title-bar
+    padding: 40px 0px 20px 32px
+    span
+      font-family: PingFangSC-Regular;
+      font-size: 24px;
+      color: #666666;
+      letter-spacing: 0.1px;
+      display: inline-block
+      height: 34px
+      line-height: 34px
+      display: flex
+      align-items: center
+      &:before
+        content: ''
+        display: inline-block
+        background: #008DFF
+        width: 12px
+        height: 12px
+        margin-right: 20px
+  .topic-comment-item
+    background: #FFFFFF
+    display: flex
+    flex-direction: row
+    padding: 42px 0 40px
+    margin: 0 32px
+    border-bottom: 2px solid rgba(0, 0, 0, .1)
+    .avatar
+      img
+        width: 72px
+        height: 72px
+        border-radius: 50%
+    .topic-comment-item-right
+      margin-left: 16px
+      flex: 1
+      .right-first-fl
+        display: flex
+        .first-fl-left
+          .nickname
+            margin-top: 8px;
+            font-family: PingFangSC-Regular;
+            font-size: 28px;
+            color: #666666;
+            letter-spacing: -0.17px;
+            line-height: 32px;
+          .first-fl-left-second-fl
+            margin-top: 8px
+            span
+              font-family: PingFangSC-Regular;
+              font-size: 20px;
+              color: #999999;
+              letter-spacing: -0.12px;
+              line-height: 24px;
+            .separated
+              padding: 0 8px
+        .first-fl-right
+          flex: 1
+          display: flex
+          justify-content: flex-end
+      .topic-comment-item-content
+        margin-top: 24px;
+        font-family: PingFangSC-Regular;
+        font-size: 32px;
+        color: #222222;
+        letter-spacing: -0.21px;
+        line-height: 48px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        word-break: break-word;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-bottom: 20px;
+        white-space: pre-wrap;
+      .isfull
+        white-space: pre-wrap;
+        margin-top: 24px;
+        font-family: PingFangSC-Regular;
+        font-size: 32px;
+        color: #222222;
+        letter-spacing: -0.21px;
+        line-height: 48px;
+        word-break: break-word;
+        margin-bottom: 20px;
+      .pack-up
+        width: 140px
+        height: 40px
+        border: 1PX solid #E6E6E6
+        border-radius: 100px
+        float: right
+        background: url('@/imgs/ic_sq_down@2x.png') 104px 10px / 20px 16px no-repeat
+      .show
+        width: 140px
+        height: 40px
+        border: 1PX solid #E6E6E6
+        border-radius: 100px
+        float: right
+        background: url('@/imgs/ic_sq_up@2x.png') 104px 10px / 20px 16px no-repeat
+      .pack-up, .show
+        span
+          font-family: PingFangSC-Medium;
+          font-size: 20px;
+          color: #999999;
+          letter-spacing: 0;
+          line-height: 40px;
+          margin-left: 16px
+      .offical
+        background: #F6FAFE
+        font-size: 28px
+        line-height: 42px
+        padding: 20px
+        position: relative
+        margin-top: 80px
+        .offical-icon
+          width: 72px
+          height: 54px
+          background: url('@/imgs/ic_sq_gf@2x.png') no-repeat
+          background-size: 100% 100%
+          position: absolute
+          top: -20px
+          left: -25px
+        .offical-content
+          .offical-blue
+            color: #2573E5

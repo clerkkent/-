@@ -1,0 +1,169 @@
+.task-bg
+  background: linear-gradient(0deg,#006adb 0%,#005ccc 99%)
+  width: 100%
+  height: 100%
+  -webkit-box-flex: 1
+  -webkit-flex: 1
+  flex: 1
+  overflow: scroll
+  padding-bottom: 80px
+  .task-del
+    font-size: 28px
+    color: #fff
+  .task-title
+    display: -webkit-box
+    -webkit-box-align: center
+    margin-top: 40px
+    justify-content: center
+    .task-title-left, .task-title-right
+      width: 100px
+      height: 2px
+      background: linear-gradient(-90deg, rgba(255,255,255,0.00) 3%, #FFFFFF 100%)
+    .task-title-left
+      transform: rotate(180deg)
+    .task-title-name
+      margin: 0 40px
+      font-size: 32px
+      color: #fff
+  .day-task, .day-task-new
+    background: #FFFFFF
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,0.10)
+    margin: 20px
+    padding: 32px 20px 24px
+    .day-task-name
+      font-size: 24px
+      color: #6245F9
+    .day-task-box
+      display: -webkit-box
+      -webkit-box-align: center
+      padding: 27px 0 37px
+      .day-task-img
+        background: url('@/imgs/ic_task_article@2x.png')  center center no-repeat
+        width: 120px
+        height: 120px
+        background-size: contain
+      .day-task-tyj
+        color: #F39A1E
+        font-size: 26px
+        padding-left: 40px
+        icon
+          background: url('@/imgs/ic_task_money@2x.png')  center center no-repeat
+          width: 28px
+          height: 28px
+          background-size: contain
+          display: inline-block
+          vertical-align: middle
+          margin: 0 6px 0 12px
+    .day-task-pop
+      border-top: 2px solid #ECECEC
+      padding-top: 24px
+      color: #999999
+      font-size: 24px
+      line-height: 24px
+    .task-achieve-title
+      display: -webkit-box
+      -webkit-box-align: center
+    .task-achieve-name
+      color: #2573E5
+      font-size: 28px
+  .day-task-new
+    padding: 10px 20px 24px
+  .task-achieve-item
+    display: -webkit-box
+    -webkit-box-align: center
+    flex-wrap: wrap
+  .task-achieve-box
+    display: flex
+    display: -webkit-flex
+    flex-wrap: wrap
+    margin-bottom: 20px
+    .task-achieve-c
+      width: 25%
+      .achieve-img,.achieve-img-no, .achieve-img-1, .achieve-img-1-no, .achieve-img-2, .achieve-img-2-no, .achieve-img-3, .achieve-img-3-no, .achieve-img-4, .achieve-img-4-no
+        width: 120px
+        height: 120px
+        text-align: center
+        line-height: 120px
+        font-size: 24px
+        color: #FF9A00
+        margin: 0 auto
+      .achieve-img
+        background: url('@/imgs/ic_task_articlemore_h@2x.png')  center center no-repeat
+        background-size: 100% 100%
+      .achieve-img-no
+        background: url('@/imgs/ic_task_articlemore_d@2x.png')  center center no-repeat
+        background-size: 100% 100%
+        color: #96A0A6
+      .achieve-img-1
+        background: url('@/imgs/ic_task_plzlike_h@2x.png')  center center no-repeat
+        background-size: 100% 100%
+      .achieve-img-1-no
+        background: url('@/imgs/ic_task_plzlike_d@2x.png')  center center no-repeat
+        background-size: 100% 100%
+        color: #96A0A6
+      .achieve-img-2
+        background: url('@/imgs/ic_task_like_h@2x.png')  center center no-repeat
+        background-size: 100% 100%
+        line-height: 140px
+      .achieve-img-2-no
+        background: url('@/imgs/ic_task_like_d@2x.png')  center center no-repeat
+        background-size: 100% 100%
+        line-height: 140px
+        color: #96A0A6
+      .achieve-img-3
+        background: url('@/imgs/ic_task_tzzlike_h@2x.png')  center center no-repeat
+        background-size: 100% 100%
+      .achieve-img-3-no
+        background: url('@/imgs/ic_task_tzlike_d@2x.png')  center center no-repeat
+        background-size: 100% 100%
+        color: #96A0A6
+      .achieve-img-4
+        background: url('@/imgs/ic_task_tzjj_h@2x.png')  center center no-repeat
+        background-size: 100% 100%
+      .achieve-img-4-no
+        background: url('@/imgs/ic_task_tzjj_d@2x.png')  center center no-repeat
+        background-size: 100% 100%
+        color: #96A0A6
+      .achieve-money
+        text-align: center
+        font-size: 26px
+        color: #F39A1E
+        icon
+          background: url('@/imgs/ic_task_money@2x.png')  center center no-repeat
+          background-size: 100% 100%
+          width: 28px
+          height: 28px
+          display: inline-block
+          vertical-align: middle
+          margin-right: 5px
+      .achieve-jd, .achieve-w
+        text-align: center
+        font-size: 20px
+        color: #36B5FC
+        margin-top: 14px
+      .achieve-w
+        color: #999
+.day-task-haddle, .finish-btn, .unfinished-btn
+  -webkit-box-flex: 2
+  text-align: right
+  span
+    width: 144px
+    height: 96px
+    text-align: center
+    line-height: 96px
+    font-size: 24px
+    color: #fff
+    display: inline-block
+.day-task-haddle
+  span
+    background: url('@/imgs/bt_task_tz@2x.png')  center center no-repeat
+    background-size: 100% 100%
+.finish-btn
+  span
+    background: url('@/imgs/bt_task_dis@2x.png')  center center no-repeat
+    background-size: contain
+.unfinished-btn
+  span
+    background: url('@/imgs/bt_task_nor@2x.png')  center center no-repeat
+    background-size: contain
+

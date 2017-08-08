@@ -1,0 +1,64 @@
+.container
+  height: 294px
+  background-image: linear-gradient(-180deg, #006ADB 0%, #008DFF 100%);
+  position: relative
+  width: 100%
+  .user
+    display: flex
+    padding-top: 42px
+    padding-left: 60px
+    .user-left
+      width: 80px
+      .avatar
+        width: 80px
+        height: 80px
+        border-radius: 50%
+    .user-right
+      margin-left: 20px
+      .nickname
+        font-family: PingFangSC-Regular;
+        font-size: 36px;
+        color: #FFFFFF;
+        letter-spacing: 0.15px;
+        line-height: 48px;
+        height: 48px;
+      .edit-info
+        margin-top: 4px
+        background: url('@/imgs/ic_mine_redact@2x.png') left center / 28px 28px no-repeat
+        span
+          opacity: 0.7;
+          font-family: PingFangSC-Regular;
+          font-size: 20px;
+          color: #FFFFFF;
+          line-height: 28px;
+          margin-left: 40px;
+  .info
+    height: 118px
+    background: rgba(255,255,255,.08)
+    position: absolute
+    bottom: 0
+    display: flex
+    width: 100%
+    .item
+      margin: 26px auto 20px
+      flex: 1
+      justify-content: center
+      align-items: center
+      text-align: center
+      border-right: 1PX solid rgba(255,255,255,.2)
+      &:last-child
+        border: none
+      .num
+        font-family: PingFangSC-Bold;
+        font-size: 32px;
+        color: #FFFFFF;
+        letter-spacing: 0.13px;
+        line-height: 44px;
+        height: 44px;
+      .title
+        span
+          font-family: PingFangSC-Regular;
+          font-size: 20px;
+          line-height: 28px;
+          color: #FFFFFF;
+          letter-spacing: 0.08px;

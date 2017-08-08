@@ -1,0 +1,163 @@
+@import './antd';
+@import './mui';
+@import './core.image.upload';
+html, body
+  height: 100%
+body
+  overflow: scroll!important
+  -webkit-overflow-scrolling: touch
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background-color: #f5f5f5
+  overflow: hidden
+:global
+  #root
+    width: 100%
+    height: 100%
+    overflow: hidden
+    .all-del, .all-count, .all-count-right
+      width: 50%
+      font-size: 36px
+      color: #999
+      text-align: center
+      height: 100px
+      line-height: 100px
+    .all-del
+      border-right: 1px solid #999
+      color: #222
+    .all-count-right
+      color: #F5422A
+    .app
+      width: 100%
+      height: 100%
+      .checkbox-icon, .checkbox-icon-ed
+        width: 44px
+        height: 44px
+        border: 1px solid #C7C7CD
+        border-radius: 50%
+        margin-left: 28px
+        position: relative
+        top: 0
+        left: 0
+        border: 1px solid #d9d9d9
+        -webkit-transition: border-color .1s cubic-bezier(.71, -0.46, .29, 1.46),background-color .1s cubic-bezier(.71, -0.46, .29, 1.46)
+        transition: border-color .1s cubic-bezier(.71, -0.46, .29, 1.46),background-color .1s cubic-bezier(.71, -0.46, .29, 1.46)
+        &:after
+            -webkit-transform: rotate(45deg) scale(0)
+            -ms-transform: rotate(45deg) scale(0)
+            transform: rotate(45deg) scale(0)
+            position: absolute
+            left: .12rem
+            top: 3px
+            display: table
+            width: 15px
+            height: 25px
+            border: 1.5px solid #fff
+            border-top: 0
+            border-left: 0
+            content: ' '
+            -webkit-transition: all .1s cubic-bezier(.71, -0.46, .88, .6)
+            transition: all .1s cubic-bezier(.71, -0.46, .88, .6)
+      .checkbox-icon-ed
+        background: #F39A1E
+        &:after
+          -webkit-transform: rotate(45deg) scale(1)
+          -ms-transform: rotate(45deg) scale(1)
+          transform: rotate(45deg) scale(1)
+          -webkit-transition: all .2s cubic-bezier(.12, .4, .29, 1.46) .1s
+          transition: all .2s cubic-bezier(.12, .4, .29, 1.46) .1s
+      .layout
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+      .scroll-wrap
+        flex: 1
+        overflow: scroll
+      .home-slider
+        display: flex;
+        flex-direction: column
+        bottom: 100px !important
+        .m-s-w-1
+          flex: 1
+          position: absolute;
+          top: 90px;
+          bottom: 100px;
+          width: 100%;
+        .layout-conent
+          top: 0px;
+          bottom: 100px;
+      .mui-fullscreen
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      .home-slider-new
+        bottom: 0px !important;
+        overflow: hidden
+      .mui-scroll-wrapper
+         bottom: 1rem
+      .w120
+        width: 120%
+      .box-hidden
+        overflow: hidden
+      .message-nav-scroll
+        width: 100%
+      .no-bottom
+        bottom: 0 !important
+      #navbar-scroll
+        line-height: 90px
+        height: 90px
+        .mui-active
+          opacity: 1;
+          font-family: PingFangSC-Medium;
+          font-size: 32px;
+          color: #FFFFFF;
+          // letter-spacing: 0.13px;
+          line-height: 84px;
+          height: 90px
+          display: inline-block;
+          border-bottom: 6px solid #FFFFFF;
+        a
+          opacity: 0.7;
+          font-family: PingFangSC-Regular;
+          font-size: 28px;
+          color: #FFFFFF;
+          // letter-spacing: 0.12px;
+          line-height: 84px;
+          height: 90px
+          display: inline-block;
+          margin: 0 20px;
+          padding: 0;
+          border-bottom: 6px solid transparent;
+      .flex-3
+        flex: 2 !important
+        #navbar-scroll
+          a
+            margin: 0 .4rem
+  p,h1,h2,h3,h4,h5,h6
+    margin: 0
+    padding: 0
+  .mt-2
+    margin-top: 2px
+  .mt-32
+    margin-top: 32px
+  .mb-18
+    margin-bottom: 18px
+  .ml-24
+    margin-left: 24px
+  .bg-white
+    background: #FFFFFF
+  .fixed
+    position: fixed
+    z-index: 999
+    top: 0
+    .abs
+      position: absolute
+      top: 80px
+  .flex-2
+    flex: 2 !important

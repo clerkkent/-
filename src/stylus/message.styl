@@ -1,0 +1,92 @@
+:global
+  .flex-box
+      display: -webkit-box
+      -webkit-box-align: center
+.message-main
+  .message-flex
+    display: -webkit-box
+    -webkit-box-align: center
+    .message-section
+      padding: 20px
+      -webkit-box-flex: 2
+    .message-item
+      background: #fff
+      margin-bottom: 20px
+      padding: 40px 32px 40px 32px
+      .message-top-info
+        display: -webkit-box
+        -webkit-box-align: center
+        .unread-message
+          width: 16px
+          height: 16px
+          background: #ff4c2e
+          border-radius: 50%
+          margin-right: 20px
+        .message-info
+          font-size: 28px
+          color: #2573E5
+          -webkit-box-flex: 2
+        .message-time
+          font-size: 20px
+          color: #999
+      .message-box
+        font-size: 32px
+        color: #222
+        margin-top: 30px
+      .old-message
+        margin-top: 20px
+        background: #F6FAFE
+        padding: 24px 20px
+        font-size: 28px
+        color: #666
+        overflow: hidden
+        white-space: nowrap
+        text-overflow: ellipsis
+  .del-main
+    height: 100px
+    display: -webkit-box
+    -webkit-box-align: center
+    position: fixed
+    bottom: 0
+    border-top: 1px solid #999
+    width: 100%
+    z-index: 100
+    background: #f5f5f5
+    .all-del, .all-count, .all-count-right
+      width: 50%
+      font-size: 36px
+      color: #999
+      text-align: center
+      height: 100px
+      line-height: 100px
+    .all-del
+      border-right: 1px solid #999
+      color: #222
+    .all-count-right
+      color: #F5422A
+.no-message
+  .default-panel-main
+    padding-top: 220px
+    .default-icon
+      background: url('@/imgs/ic_default_message@2x.png')  center center no-repeat
+      width: 100%
+      height: 284px
+      background-size: contain
+      display: block
+    p
+      font-size: 28px
+      color: #999
+      text-align: center
+.no-comment
+  .default-panel-main
+    padding-top: 220px
+    .default-icon
+      background: url('@/imgs/ic_default_message@2x.png')  center center no-repeat
+      width: 100%
+      height: 284px
+      background-size: contain
+      display: block
+    p
+      font-size: 28px
+      color: #999
+      text-align: center

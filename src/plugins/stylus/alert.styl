@@ -1,0 +1,100 @@
+@keyframes elasticity
+  0%
+    transform: scale(.5)
+  70%
+    transform: scale(1.08)
+  100%
+    transform: scale(1)
+@keyframes bgopacity
+  0%
+    background-color: rgba(0,0,0,0)
+  100%
+    background-color: rgba(0,0,0,.4)
+@keyframes bgleave
+  0%
+    background-color: rgba(0,0,0,0.4)
+  100%
+    background-color: rgba(0,0,0,0)
+@keyframes boxleave
+  0%
+    transform: scale(1)
+  30%
+    transform: scale(1.08)
+    opacity: 1
+  100%
+    transform: scale(.4)
+    opacity: 0
+.enter
+  .modal-mask
+    animation: bgopacity 300ms cubic-bezier(.24,.61,.48,.95)
+  .modal-content
+    animation: elasticity 300ms cubic-bezier(.24,.61,.48,.95)
+.leave
+  .modal-mask
+    background-color: rgba(0,0,0,0)
+    animation: bgleave 300ms cubic-bezier(.57,.09,.37,.9)
+  .modal-content
+    animation: boxleave 300ms cubic-bezier(.57,.09,.37,.9)
+#modal
+  .modal-mask
+    position: absolute
+    top: 90px
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 999
+    background-color: rgba(0,0,0,.4)
+    animation-fill-mode: forwards
+  .modal-wrap
+    position: absolute
+    top: 90px
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 999
+    display: flex
+    justify-content: center
+    align-items: center
+    .modal-content
+      animation-fill-mode: forwards
+      display: flex
+      flex-direction: column
+      width: 540px
+      overflow: hidden
+      border-radius: 24px
+      .header
+        height: 172px
+        background: url('@/imgs/bg_sq_tc@2x.png') top left / 100% auto no-repeat
+      .text-content
+        background:#FFF
+        color: #666666
+        min-height: 100px
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: -2px
+        p
+          margin: 0
+          padding: 0
+          font-size: 28px
+          line-height: 48px
+          font-family: PingFangSC-Regular
+          margin: 24px 30px 52px
+      .footer
+        background:#FFF
+        display: flex
+        height: 96px
+        line-height: 96px
+        span
+          font-size: 28px
+          font-family: PingFangSC-Regular
+          flex: 1
+          text-align: center
+          border-top: 1PX solid rgba(0, 0, 0, .1)
+          border-right: 1PX solid rgba(0, 0, 0, .1)
+          &:last-child
+            border-right: none
+        .cancel
+          color: #999999
+        .confirm
+          color: #E83C25

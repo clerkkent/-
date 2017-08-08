@@ -1,0 +1,92 @@
+.title
+  height: 100px
+  border-bottom: 2px solid rgba(0, 0, 0, .1)
+  box-sizing: border-box
+  margin: 0 32px
+  display: flex
+  flex-direction: row
+  font-family: PingFangSC-Regular
+  font-size: 32px
+  color: #101010
+  letter-spacing: -0.23px
+  span
+    display: flex
+    align-items: center
+  input
+    height: 98px !important
+    flex: 1 !important
+    border: none !important
+    line-height: 48px !important
+    font-family: PingFangSC-Regular
+    font-size: 32px !important
+    padding: 0 !important
+    margin: 0 !important
+    display: flex
+    align-items: center
+    &::-webkit-input-placeholder
+      color: #999999
+.content
+  margin: 0 32px
+  position: relative
+  #text-area
+    margin: 32px 0 20px
+    padding: 0px
+    width: 100%
+    min-height: 300px
+    max-height: 600px
+    overflow-y: scroll
+    border: none
+    resize: none
+    font-family: PingFangSC-Regular;
+    font-size: 32px;
+    color: #666666;
+    letter-spacing: -0.2px;
+    line-height: 48px;
+    &::-webkit-input-placeholder
+      color: #999999
+      font-size: 28px;
+  .count
+    font-size: 24px
+    color: #999
+    position: absolute
+    right: 0
+    bottom: 24px
+    letter-spacing: -0.15px
+    .now
+      color: #E83C25
+.image-picker
+  background: #FFFFFF
+  overflow: hidden
+  :global
+    .am-wingblank
+      margin-left: 20px
+      margin-right: 20px
+      .am-flexbox
+        display: initial
+        .am-flexbox-item
+          float: left
+          width: 31.33% !important
+          height: 31.33% !important
+          margin: 1%
+.submit
+  width: 88px
+  height: 44px
+  display: flex
+  justify-content: center
+  align-items: center
+  span
+    font-family: PingFangSC-Bold
+    font-size: 28px
+    color: #FFFFFF
+    line-height: 28px
+.disable
+  width: 88px
+  height: 44px
+  display: flex
+  justify-content: center
+  align-items: center
+  opacity: .5
+  span
+    font-family: PingFangSC-Regular
+    font-size: 28px
+    color: #FFFFFF
